@@ -1,11 +1,18 @@
 import "./App.css";
-import { Card } from "./Components/Card";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Custm from "./Components/Home/Custm";
+import Hero from "./Components/Home/Hero";
+// import Custm from "./Components/Home/Custm";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold ">journalSquads</h1>
-      <Card />
+      <Header />
+      <Hero />
+      <Custm />
+      <Footer />
+      {/* <Custm /> */}
     </>
   );
 }
