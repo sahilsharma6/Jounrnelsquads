@@ -1,7 +1,7 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Custm from "./components/Home/Custm";
 import Hero from "./components/Home/Hero";
 import Journal from "./components/Journal/Journal";
