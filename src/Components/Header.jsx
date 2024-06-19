@@ -2,36 +2,46 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../App.css";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [search, setSearch] = useState("");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const [search, setIsSearch] = useState(undefined);
-
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      setIsSearch(event.target.value);
+      setSearch(event.target.value);
     }
   };
-  // console.log(search);
-  return (
-    <div className="bg-white w-full z-50 ">
-      <header className="container mx-auto text-black p-4 bg-white flex justify-between items-center">
-        <div className="font-bold md:ml-5 text-5xl text-green-500">logo</div>
 
-        <div className="hidden md:flex space-x-4 items-center lg:ml-[20rem] nav">
-          <a href="#home" className="nav-link">
-            Home
+  return (
+    <div className="bg-white w-full z-50">
+      <header className="container mx-auto text-black p-4 bg-white flex justify-between items-center">
+        <div className="font-bold md:ml-5 text-5xl text-green-500">
+          <a href="/">
+            <img src={logo} alt="Logo" className="h-[50px]" />
           </a>
-          <a href="#about" className="nav-link">
+        </div>
+
+        <div className="hidden md:flex space-x-4 items-center nav">
+          <a href="/journal" className="nav-link">
             Journals
           </a>
+          <a href="#about" className="nav-link">
+            Journal Guidelines
+          </a>
           <a href="#services" className="nav-link">
-            Join us
+            Our Services
+          </a>
+          <a href="#contact" className="nav-link">
+            Join Us
+          </a>
+          <a href="#contact" className="nav-link">
+            Submit Manuscript
           </a>
           <a href="#contact" className="nav-link">
             Contact
@@ -39,7 +49,7 @@ const Header = () => {
           <div className="relative">
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search"
               className="px-2 py-1 rounded bg-green-500 text-white placeholder-white pl-10"
               onKeyDown={handleKeyDown}
             />
@@ -77,13 +87,19 @@ const Header = () => {
           } overflow-hidden absolute z-50 top-[5.1rem] left-0 text-white w-full bg-gray-800 md:hidden transition-max-height transition-all duration-700 ease-in-out`}
         >
           <a href="#home" className="block p-4 hover:bg-gray-700 nav-link">
-            Home
-          </a>
-          <a href="#about" className="block p-4 hover:bg-gray-700 nav-link">
             Journals
           </a>
+          <a href="#about" className="block p-4 hover:bg-gray-700 nav-link">
+            Journal Guidelines
+          </a>
           <a href="#services" className="block p-4 hover:bg-gray-700 nav-link">
-            Join us
+            Our Services
+          </a>
+          <a href="#contact" className="block p-4 hover:bg-gray-700 nav-link">
+            Join Us
+          </a>
+          <a href="#contact" className="block p-4 hover:bg-gray-700 nav-link">
+            Submit Manuscript
           </a>
           <a href="#contact" className="block p-4 hover:bg-gray-700 nav-link">
             Contact

@@ -1,9 +1,9 @@
 .slick-slide > div {
   margin: 0 10px;
 }
-.slick-list {
+/* .slick-list {
   height: 60px;
-}
+} */
 .slick-prev:before {
   color: black !important;
   font-size: 40px !important;

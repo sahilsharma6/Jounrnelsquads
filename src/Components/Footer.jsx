@@ -29,10 +29,22 @@ const Footer = () => {
               <a href="#services">Journals</a>
             </li>
             <li>
-              <a href="#about">Join us</a>
+              <a href="#about">Join Us</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#submit-manuscript">Submit Manuscript</a>
+            </li>
+            <li>
+              <a href="#publication-guidelines">Publication Guidelines</a>
+            </li>
+            <li>
+              <a href="#privacy-policy">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#terms-of-service">Terms Of Service</a>
             </li>
           </ul>
         </div>

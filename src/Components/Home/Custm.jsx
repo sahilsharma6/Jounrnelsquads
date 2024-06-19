@@ -12,6 +12,7 @@ import img_8 from "../../assets/images/img_8.png";
 // import "./Custm.css";
 import "./Custm.css";
 
+
 const Custm = () => {
   const testimonials = [
     {
@@ -64,7 +65,7 @@ const Custm = () => {
     <div className="bg-gray-100 py-16 ">
       <div className=" my-12  bg-gray-100  container border mx-auto     ">
         <div className="mb-12 text-center">
-          <h2 className="text-4xl font-semibold   text-black    ">
+          <h2 className="text-4xl font-semibold   text-black    overflow-hidden">
             Indexing and Services
           </h2>
         </div>

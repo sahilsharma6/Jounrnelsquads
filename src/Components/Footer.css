@@ -12,6 +12,7 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .footer-column {
@@ -69,4 +70,10 @@
 .footer-bottom p {
   margin: 0;
   font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .footer-column {
+    min-width: 100%;
+  }
 }
